@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — John Luis S. Penaloza</title>
+  <meta name="description" content="Resume & portfolio of Your Name — Designer / Developer" />
+
+  <!-- Google Font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #dfe3e9;
+      --card: #e4e5e8;
+      --muted: #e9edf2;
+      --accent: #899aae;
+      --glass: rgba(42, 33, 33, 0.03);
+      --radius: 14px;
+      --max-width: 1100px;
+      color-scheme: dark;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: linear-gradient(180deg,#071029 0%, #081426 60%);
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:40px 20px;
+      display:flex;
+      justify-content:center;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--max-width);
+      display:grid;
+      grid-template-columns: 360px 1fr;
+      gap:28px;
+      align-items:start;
+    }
+
+    /* SIDEBAR */
+    .sidebar{
+      background:linear-gradient(180deg, rgba(46, 40, 40, 0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow: 0 8px 30px rgba(36, 45, 86, 0.6);
+      position:sticky; top:40px; height:fit-content;
+    }
+
+    .avatar{
+      width:100%; display:flex; justify-content:center; margin-bottom:18px;
+    }
+    .avatar img{width:140px; height:140px; border-radius:18px; object-fit:cover; border:3px solid rgba(255,255,255,0.06)}
+
+    h1.name{font-size:20px; margin:0; text-align:center}
+    p.role{margin:6px 0 18px; text-align:center; color:var(--muted); font-size:13px}
+
+    .contact{display:flex; flex-direction:column; gap:10px; margin-top:10px}
+    .contact a{color:var(--accent); text-decoration:none; font-weight:600}
+    .muted{color:var(--muted); font-size:13px}
+
+    .section-title{font-size:12px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); margin:18px 0 8px}
+
+    .skills {display:flex; flex-wrap:wrap; gap:8px}
+    .skill{background:var(--glass); padding:8px 10px; border-radius:999px; font-size:13px; color: #dbeafe}
+
+    .edu-item, .lang-item{font-size:14px; margin-bottom:8px}
+
+    /* MAIN */
+    .main{
+      background:linear-gradient(180deg, rgba(213, 205, 205, 0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow: 0 8px 30px rgba(50, 60, 102, 0.6);
+    }
+
+    .hero{display:flex; justify-content:space-between; gap:16px; align-items:flex-start}
+    .hero-left{max-width:70%}
+    .headline{font-size:28px; margin:0 0 6px}
+    .sub{color:var(--muted); margin:0 0 16px}
+
+    .cta{display:flex; gap:10px}
+    .btn{display:inline-block; padding:10px 14px; border-radius:10px; text-decoration:none; font-weight:600}
+    .btn-primary{background:linear-gradient(90deg,var(--accent), #3b82f6); color:#021028}
+    .btn-ghost{border:1px solid rgba(248, 247, 247, 0.06); color:var(--muted); background:transparent}
+
+    .summary{color:var(--muted); line-height:1.6}
+
+    .cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin-top:18px}
+    .card{background:rgba(249, 247, 247, 0.02); padding:14px; border-radius:12px; min-height:90px}
+    .card h3{margin:0 0 6px}
+    .card p{margin:0; color:var(--muted); font-size:14px}
+
+    .experience{margin-top:20px}
+    .job{padding:14px; border-radius:10px; background:rgba(248, 245, 245, 0.01); margin-bottom:12px}
+    .job h4{margin:0}
+    .job .meta{color:var(--muted); font-size:13px; margin-top:6px}
+    .job p{margin-top:8px; color:var(--muted)}
+
+    .projects{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px}
+    .project{padding:12px; border-radius:10px; background:rgba(244, 239, 239, 0.01)}
+    .project h4{margin:0 0 6px}
+
+    footer{margin-top:26px; color:var(--muted); font-size:13px; text-align:center}r
+
+    /* responsive */
+    @media (max-width: 920px){
+      .container{grid-template-columns:1fr;}
+      .hero{flex-direction:column}
+      .hero-left{max-width:100%}
+      .projects{grid-template-columns:1fr}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="Sidebar">
+      <div class="avatar">
+        <!-- Replace the src with your photo -->
+        <img src="c:\Users\ANA\Downloads\Image.jpg" John Luis S. Penaloza>
+      </div>
+      <h1 class="name">John Luis S. Penaloza</h1>
+      <p class="role">Developer</p>
+
+      <div class="contact">
+        <div class="muted">Location</div>
+        <div> Bacolod City, Philippines</div>
+        <div class="muted">jolupenaloza31@gmail.com</div>
+        <a href="mailto:johnpenaloza31@gmail.com">johnpenaloza31@gmail.com</a>
+        <div class="muted">Website</div>
+        <a href="#">ThePortfolioofJohnLuisPenaloza.com</a>
+      </div>
+
+      <div class="section-title">Skills</div>
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill"></div>
+        <div class="skill"></div>
+        <div class="skill"></div>
+        <div class="skill"></div>
+      </div>
+
+      <div class="section-title">Education</div>
+      <div class="edu-item">
+        <strong>BSIT — STI College</strong>
+        <div class="muted">2022—2026</div>
+      </div>
+
+      <div class="section-title">Languages</div>
+      <div class="lang-item">English — Professional</div>
+      <div class="lang-item">Filipino — Native</div>
+
+      <div class="section-title">Download</div>
+      <a class="btn btn-ghost" href="#" download="JohnLuisPenaloza_Resume.pdf">Download PDF</a>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+      <section class="hero">
+        <div class="hero-left">
+          <h2 class="headline">Hi — I'm <strong>John Luis S. Penaloza</strong></h2>
+          <p class="sub">I build accessible and delightful web experiences. I focus on performance, and practical solutions that help teams ship faster.</p>
+
+          <div class="cta">
+            <a class="btn btn-primary" href="#projects">See projects</a>
+            <a class="btn btn-ghost" href="mailto:jolupenaloza@gmail.com">Contact me</a>
+          </div>
+
+          <p class="summary" style="margin-top:16px">I’m still learning.</p>
+
+          <div class="cards">
+            <div class="card">
+              <h3>Availability</h3>
+              <p class="muted">part-time</p>
+            </div>
+            <div class="card">
+              <h3>Experience</h3>
+              <p class="muted">i don't have any experience but I'm willing to learn.</p>
+            </div>
+            <div class="card">
+              <h3>Contact</h3>
+              <p class="muted">jolupenaloza31@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right" style="min-width:200px;">
+          <!-- Quick profile stats or highlights -->
+          <div class="card" style="text-align:center;">
+            <h3>Key facts</h3>
+            <p class="muted">UI design • Prototyping • Responsive web </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience">
+        <h3 class="section-title">Experience</h3>
+
+        <div class="job">
+          <h4>Developer — Company Name</h4>
+          <div class="meta">Jun 2023 — Present • Manila</div>
+          <p class="muted">Built components, improved page load times by 30%.</p>
+        </div>
+
+        <div class="job">
+          <h4>Web Intern — Another Company</h4>
+          <div class="meta">Jan 2022 — May 2023</div>
+          <p class="muted">Worked on landing pages, and small marketing campaigns.</p>
+        </div>
+      </section>
+
+      <section id="projects" style="margin-top:18px">
+        <h3 class="section-title">Selected Projects</h3>
+        <div class="projects">
+          <div class="project">
+            <h4>Project One</h4>
+            <p class="muted">A landing page with interactive components and smooth animations. <a href="#">View</a></p>
+          </div>
+
+          <div class="project">
+            <h4>Project Two</h4>
+            <p class="muted">Internal dashboard that helped reduce reporting time by 40%. <a href="#">View</a></p>
+          </div>
+
+          <div class="project">
+            <h4>Project Three</h4>
+            <p class="muted">A small e‑commerce prototype built with React and Stripe integration. <a href="#">View</a></p>
+          </div>
+
+          <div class="project">
+            <h4>Project Four</h4>
+            <p class="muted">Design → Code conversion from Figma to a responsive website. <a href="#">View</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top:18px">
+        <h3 class="section-title">Education & Certificates</h3>
+        <div class="job" style="padding:12px">
+          <strong>BS Information Technology</strong>
+          <div class="muted">STI College — 2022–2026</div>
+          <p class="muted" style="margin-top:8px">Certificate: Frontend Web Dev (example)</p>
+        </div>
+      </section>
+
+      <section style="margin-top:18px">
+        <h3 class="section-title">Contact</h3>
+        <p class="muted">Interested in working together or have a question? Send me a note.</p>
+        <p style="margin-top:10px">
+          <a class="btn btn-primary" href="mailto:youremail@example.com">Email me</a>
+          <a class="btn btn-ghost" href="#">Download CV</a>
+        </p>
+      </section>
+
+      <footer>
+        © <span id="year">2026</span>John Luis S. Penaloza— build with care.
+      </footer>
+    </main>
+
+  </div>
+
+  <script>
+    // Small niceties
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
